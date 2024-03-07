@@ -1,0 +1,81 @@
+.main_performance{
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.graph1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.graph2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.price1{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    /* gap: 60px; */
+ 
+}
+.price2{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    /* gap:60px; */
+}
+
+.fundamental1{
+    white-space: nowrap;
+    display: flex;
+    line-height: 50px;
+    gap: 20px;
+}
+
+.gradient-line{
+    width: 60%;
+    height: 7px;
+    border-radius: 10px;
+    background: rgb(255,0,0);
+background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,141,0,1) 35%, rgba(255,248,0,1) 64%, rgba(11,171,16,1) 100%);
+}
+
+.graph1 p:last-child,.graph2 p:last-child{
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+
+    .gradient-line{
+        width: 40%;
+    }
+
+    .fundamental1{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .price1,.price2{
+        width: 100%;
+    }
+
+}

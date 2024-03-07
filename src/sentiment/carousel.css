@@ -1,0 +1,28 @@
+.carousel_div {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.item_div {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #87ceeb;
+    width: 50%;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.main_item {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .main_item {
+        flex-direction: column;
+    }
+
+    .item_div {
+        width: 100%;
+    }
+}

@@ -1,0 +1,66 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    background-color:white;
+    color: #010101;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+  }
+  .nav_btn{
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+    width: 100px;
+    height: 30px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .navbar-left {
+    flex: 1; /* Takes up remaining space */
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .logo{
+    width: 150px;
+  }
+
+  .navbar-right {
+    display: flex;
+    gap: 25px;
+    margin-right: 100px;
+  }
+  
+  .navbar-right a {
+    margin-left: 1rem;
+    color: black;
+    text-decoration: none;
+  }
+
+  .menu{
+    display: none;
+  }
+  
+  /* Media Query for responsiveness */
+  @media (max-width: 768px) {
+    .menu{
+      display: block;
+    }
+    .navbar{
+      height: 25px;
+    }
+    .navbar-left {
+      margin: 0px;
+    }
+    
+    .navbar-right {
+      display: none;
+    }
+  }
+  

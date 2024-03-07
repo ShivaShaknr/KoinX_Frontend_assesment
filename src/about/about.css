@@ -1,0 +1,15 @@
+.already{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .already{
+        flex-direction: column;
+    }
+    .already1,.already2{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}

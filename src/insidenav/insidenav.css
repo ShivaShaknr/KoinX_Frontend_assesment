@@ -1,0 +1,39 @@
+.in_nav{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    color: black;   
+}
+.in_nav a{
+    text-decoration: none;
+    color: black;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.in_nav > li{
+    display: inline;
+}
+li{
+    text-decoration: none;
+}
+li :hover{
+    color: blue;
+}
+hr{
+    width: 100%;
+    height:1px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    
+    .in_nav{
+        overflow-y: scroll;
+        gap: 20px;
+        padding: 15px 0px;
+    }
+    .in_nav a{
+        white-space: nowrap;
+    }
+}
